@@ -25,13 +25,21 @@ If you want to contribute to this project, you can fork the repository and submi
 
 ## Credits 🙏
 
-This mini app was created by []. Special thanks to [Any references you may have used].
+This mini app was created by [Hussain Sarfaraz](https://github.com/pvm-77). Special thanks to [Any references you may have used].
 
 ## License 📝
 
 This project is licensed under the MIT License.
 
-Enjoy using MyContacts! If you have any feedback or suggestions, feel free to contact me at [Your email here].
+Enjoy using MyContacts! If you have any feedback or suggestions, feel free to contact me at <a href="https://twitter.com/sarfaraz_0707">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter icon" width="10" height="10">
+</a>
+<a href="mailto:sfzalig@gmail.com">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Gmail icon" width="10" height="10">
+</a>
+
+
+
 
 
 
