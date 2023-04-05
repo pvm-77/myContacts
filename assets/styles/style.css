@@ -1,0 +1,102 @@
+@import url("reset.css");
+
+.header-container {
+  border: 1px solid red;
+  width: 100%;
+  background-color: #1b1b32;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+.nav {
+  /* border: 1px solid green; */
+  width: 50%;
+  height: 50px;
+}
+.menu-list {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  padding-inline-start: 0;
+  margin-block: 0;
+}
+.nav-item {
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+.nav-item:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
+}
+.nav-link {
+  color: inherit;
+}
+.main-content {
+  padding-top: 80px;
+}
+section {
+  /* border: 1px solid pink; */
+  width: 80%;
+  margin: 0 auto 10px auto;
+  max-width: 600px;
+}
+
+section > h1 {
+  text-align: center;
+  padding: 12px 6px;
+}
+.contact-form {
+  padding: 12px 6px;
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-list {
+  background-color: #1b1b32;
+}
+
+.mb {
+  /* border: 1px solid pink; */
+  margin-bottom: 1.25rem;
+  /* width: 100%; */
+}
+.mb > input {
+  margin: 0 auto;
+  height: 40px;
+  padding: 12px 6px;
+  /* width: 50%; */
+}
+button {
+  padding: 6px 6px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: blue;
+  color: wheat;
+  /* width: 100%; */
+}
+ul {
+  /* border: 1px solid red; */
+  padding: 6px 6px;
+}
+
+ul >li{
+    padding: 6px 6px;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}

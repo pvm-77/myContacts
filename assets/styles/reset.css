@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,900&display=swap');
+
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+/* Remove default margin and padding */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles (bullet points, numbers) */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Remove anchor text decoration */
+a {
+  text-decoration: none;
+}
+
+/* Remove table border spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset font size and line height */
+html {
+  font-size: 62.5%; /* Set 1rem to 10px */
+}
+
+body {
+  font-size: 1.6rem; /* Set base font size to 16px */
+  line-height: 1.4;
+}
+
+/* Set a default font family */
+body {
+  /* font-family: sans-serif; */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Remove input and button border */
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+/* Remove text input default padding */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  padding: 0;
+}
+
+/* Remove text input default border radius */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+button {
+  border-radius: 0;
+}
