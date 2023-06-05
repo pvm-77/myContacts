@@ -1,6 +1,6 @@
 @import url("reset.css");
 
-.header-container {
+/* .header-container {
   border: 1px solid red;
   width: 100%;
   background-color: #1b1b32;
@@ -11,12 +11,10 @@
   top: 0;
 }
 .nav {
-  /* border: 1px solid green; */
   width: 50%;
   height: 50px;
 }
 .menu-list {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -43,7 +41,6 @@
   padding-top: 80px;
 }
 section {
-  /* border: 1px solid pink; */
   width: 80%;
   margin: 0 auto 10px auto;
   max-width: 600px;
@@ -55,7 +52,6 @@ section > h1 {
 }
 .contact-form {
   padding: 12px 6px;
-  /* border: 1px solid red; */
 
   display: flex;
   flex-direction: column;
@@ -68,15 +64,13 @@ section > h1 {
 }
 
 .mb {
-  /* border: 1px solid pink; */
   margin-bottom: 1.25rem;
-  /* width: 100%; */
 }
 .mb > input {
   margin: 0 auto;
   height: 40px;
   padding: 12px 6px;
-  /* width: 50%; */
+ 
 }
 button {
   padding: 6px 6px;
@@ -85,10 +79,8 @@ button {
 button:hover {
   background-color: blue;
   color: wheat;
-  /* width: 100%; */
 }
 ul {
-  /* border: 1px solid red; */
   padding: 6px 6px;
 }
 
@@ -99,4 +91,136 @@ li{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+} */
+
+body {
+  background-color: #222;
+
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+/* Style the form container */
+.contact-form {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+input[type="text"] {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+.contact-form::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 100%);
+  z-index: -1;
+  opacity: 0.3;
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 480px) {
+  .contact-form {
+      max-width: 300px;
+  }
+}
+
+/* Truncate long text and add tooltip */
+.contact-info span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 200px; /* Adjust this value based on your preference */
+  vertical-align: middle;
+  position: relative;
+}
+
+.contact-info span::after {
+  content: attr(title);
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #000;
+  color: #fff;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  border-radius: 4px;
+}
+
+.contact-info span:hover::after {
+  opacity: 1;
+}
+
+/* Adjust the layout of contact list items */
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #444;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* Style the update and delete buttons */
+li button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #0056b3;
 }

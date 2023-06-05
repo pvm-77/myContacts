@@ -142,17 +142,28 @@ function generateId() {
 }
 
 
-
+function truncateText(text, maxLength) {
+    if (text.length <= maxLength) {
+      return text;
+    }
+    
+    return text.substr(0, maxLength) + '...';
+  }
 
 function readContacts() {
     let currentContactList = '';
     currentContactList = `<ul>
     ${contacts.map(contact => `
-        <li id="${contact.id}">
-        ${contact.contactName} ${contact.contactNumber}
-         <button onClick="updateContact('${contact.id}')">update</button>
-         <button onClick="deleteContact('${contact.id}')">delete</button>
-        </li>
+         <li id="${contact.id}">
+      <div class="contact-info">
+        <span class="contact-name"  title="${contact.contactName}">${truncateText(contact.contactName)}</span>
+        <span class="contact-number" title="${contact.contactNumber}">${truncateText(contact.contactNumber)}</span>
+      </div>
+      <div class="contact-actions">
+        <button onClick="updateContact('${contact.id}')">update</button>
+        <button onClick="deleteContact('${contact.id}')">delete</button>
+      </div>
+    </li>
     `).join('')}
     </ul>`
     contactList.innerHTML = currentContactList;
