@@ -25,7 +25,7 @@ If you want to contribute to this project, you can fork the repository and submi
 
 ## Credits 🙏
 
-This mini app was created by [Hussain Sarfaraz](https://github.com/pvm-77). Special thanks to [Any references you may have used].
+This mini app was created by [Hussain Sarfaraz](https://github.com/pvm-77).
 
 ## License 📝
 
