@@ -12,6 +12,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 5. The authors of this software are not liable for any damages or losses incurred through the use or misuse of the software.
 
-6. This license shall be governed by and construed in accordance with the laws of the State of Massachusetts, USA.
-
-7. The names "myContacts" and "MIT" may not be used to endorse or promote products derived from this software without specific prior written permission.
+6. The names "myContacts" and "MIT" may not be used to endorse or promote products derived from this software without specific prior written permission.
